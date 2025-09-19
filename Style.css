@@ -1,111 +1,47 @@
+.character-card img {
+    width: 200px; /* This sets the width of the image */
+    height: 200px; /* This sets the height of the image */
+    object-fit: cover; /* This is the magic line! */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
 body {
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
+    color: yellow;
+    margin: 0;
+    padding: 0;
+    
+    /* Background Image Properties */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-h1 {
-    color: #007bff;
+header, section {
+    padding: 50px 20px;
     text-align: center;
 }
-
-p {
-    font-size: 18px;
+h1, h2 {
+    color: black;
 }
-/* Hero Section Styles */
-.hero {
-    background-color: #34495e; /* Dark background */
-    color: white; /* White text */
-    padding: 100px 20px; /* Space inside the hero section */
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 800px; /* Limits the width of content for readability */
-    margin: 0 auto; /* Centers the content */
-}
-
-.hero h1 {
-    color: white; /* Override the blue color from before */
-    font-size: 2.5em; /* Make the heading larger */
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2em; /* Make the paragraph larger */
-    opacity: 0.8;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #007bff; /* Blue button */
-    color: white;
-    text-decoration: none; /* Removes the underline from the link */
-    padding: 15px 30px;
-    border-radius: 5px; /* Rounded corners */
-    margin-top: 20px;
-}
-/* Container for content */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Features Section Styles */
-.features {
-    padding: 50px 0;
-    background-color: white;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
-}
-
-.feature-grid {
+.characters {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.feature-item {
-    background-color: #f8f9fa;
+.character-card {
+    background-color: #1f2833;
     padding: 20px;
-    border-radius: 8px;
-    flex-basis: calc(33.333% - 20px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.feature-item h3 {
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.feature-item p {
-    font-size: 1em;
-}
-/* Contact Section Styles */
-.contact {
-    background-color: #34495e;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.contact h2 {
-    color: white;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #2c3e50;
-    color: #bdc3c7;
-    text-align: center;
-    padding: 20px 0;
+.gallery-image {
+  width: 250px; /* or a percentage like 30% */
+  height: auto; /* keeps the aspect ratio correct */
+  border-radius: 8px;
+  margin: 10px;
 }
